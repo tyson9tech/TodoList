@@ -1,0 +1,133 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html *,
+html *::before,
+html *::after {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+html body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2193b0), to(#6dd5ed));
+  background: linear-gradient(to bottom, #2193b0, #6dd5ed);
+  color: #ffffff;
+}
+
+html body #todoForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+  width: 90%;
+}
+
+html body #todoForm #todoInput {
+  width: 50%;
+  padding: .1rem .5rem;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  border: none;
+  outline: none;
+  background-color: #05556a;
+  border-bottom: .1rem solid #ffffff;
+  color: #ffffff;
+  font-size: 1.1rem;
+  border-radius: .5rem 0 0 .5rem;
+}
+
+html body #todoForm #todoBtn {
+  cursor: pointer;
+  width: 3rem;
+  padding: .2rem .5rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: .1rem solid #000000;
+  border-radius: 0 .5rem .5rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+html body #todoList {
+  margin-top: 1rem;
+}
+
+html body #todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+  border: none;
+  outline: none;
+  background-color: #05556a;
+  color: #ffffff;
+  font-size: .1rem 1.2rem;
+  margin: .5rem auto;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+html body #todo .cmpChckBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-bottom: .5rem;
+}
+
+html body .thingTodo {
+  width: 90%;
+  padding: 0 .5rem;
+}
+
+html body .trash, html body .completed {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  border-radius: 50%;
+  margin: 0 .1rem;
+}
+
+html body .trash {
+  background-color: #ff0000;
+}
+
+html body .completed {
+  background-color: #00ff00;
+}
+
+html body .complete {
+  text-decoration: line-through;
+}

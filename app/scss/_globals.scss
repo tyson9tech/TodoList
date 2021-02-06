@@ -1,0 +1,115 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+
+
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-decoration: none;
+        font-family: 'Source Sans Pro',
+            sans-serif;
+    }
+
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        overflow-x: hidden;
+        min-height: 100vh;
+        box-sizing: inherit;
+        background: linear-gradient(to bottom, #2193b0, #6dd5ed);
+        color: #ffffff;
+
+
+        #todoForm {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            width: 90%;
+
+            #todoInput {
+                width: 50%;
+                padding: .1rem .5rem;
+                flex-wrap: wrap-reverse;
+                border: none;
+                outline: none;
+                background-color: #05556a;
+                border-bottom: .1rem solid #ffffff;
+                color: #ffffff;
+                font-size: 1.1rem;
+                border-radius: .5rem 0 0 .5rem;
+            }
+
+
+            #todoBtn {
+                cursor: pointer;
+                width: 3rem;
+                padding: .2rem .5rem;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                border-bottom: .1rem solid #000000;
+                border-radius: 0 .5rem .5rem 0;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+
+        #todoList{
+            margin-top: 1rem;
+        }
+
+        #todo{
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+            border: none;
+            outline: none;
+            background-color: #05556a;
+            color: #ffffff;
+            font-size: .1rem 1.2rem;
+            margin: .5rem auto;
+            padding: .5rem;
+            border-radius: .5rem;
+
+            .cmpChckBtn{
+                display: flex;
+                margin: auto;
+                margin-bottom: .5rem;
+            }
+        }
+
+        .thingTodo{
+            width: 90%;
+            padding: 0 .5rem;
+        }
+
+        .trash, .completed {
+            width: 1.5rem;
+            height: 1.5rem;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            font-weight: bold;
+            border-radius: 50%;
+            margin: 0 .1rem;
+        }
+
+        .trash{
+            background-color: #ff0000;
+        }
+        .completed{
+            background-color: #00ff00;
+        }
+
+        .complete{
+            text-decoration: line-through;
+        }
+    }
+}
